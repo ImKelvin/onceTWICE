@@ -1,0 +1,118 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.games {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 230px;
+  width: 100%;
+  color: #333333;
+  text-align: center;
+  height: 670px;
+  background-color: #ffffff;
+  line-height: 1.6em;
+}
+.games * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.games .image {
+  position: relative;
+}
+.games img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+.games .icons,
+.games .add-to-cart {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  opacity: 0;
+}
+.games .icons {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.games .icons a {
+  width: 32.5%;
+  background: #ffffff;
+}
+.games .icons a:hover {
+  background: #000000;
+}
+.games .icons a:hover i {
+  color: #ffffff;
+  opacity: 1;
+}
+.games .icons i {
+  line-height: 46px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0;
+}
+.games .add-to-cart {
+  position: absolute;
+  bottom: 20px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  font-size: 0.8em;
+  color: #000000;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.games .add-to-cart:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.games figcaption {
+  padding: 20px 20px 30px;
+}
+.games h2,
+.snip1268 p {
+  margin: 0;
+  text-align: left;
+}
+.games h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.games p {
+  margin-bottom: 15px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.games .price {
+  font-size: 1.3em;
+  opacity: 0.5;
+  font-weight: 700;
+  text-align: right;
+}
+.games:hover img,
+.games.hover img {
+  opacity: 0.8;
+}
+.games:hover .icons,
+.games.hover .icons,
+.games:hover .add-to-cart,
+.games.hover .add-to-cart {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
